@@ -62,10 +62,10 @@
               <li class="list-group-item" data-bs-toggle="popover" title="Certified Cloud Practitioner" data-bs-content="<div class='iframe-AWS-cert-container'><iframe src='./assets/pdf/AWS-Certified-Cloud-Practitioner-certificate.pdf#zoom=50'></iframe></div>">
                 <img src="assets/images/AWS-badge.png" class="achievement-icon" alt="Cert Icon"> Certified Cloud Practitioner
               </li>
-              <li class="list-group-item" data-bs-toggle="popover" title="Southern New Hampshire University Awards" data-bs-content="<div class='iframe-AWS-cert-container'><iframe src='https://meritpages.com/Justin-swinney'></iframe></div>">
+              <li class="list-group-item" data-bs-toggle="popover" title="Southern New Hampshire University Awards" data-bs-content="View my awarded badges on Merit Pages: <a href='https://meritpages.com/Justin-swinney'>Visit Merit Pages</a>">
                 <img src="assets/images/Icon_PL_Merit.png" class="achievement-icon"  alt="Badge">
                 <img src="assets/images/Icon_HR_Merit.png" class="achievement-icon" alt="Badge">
-               SNHU Awarded Badges
+                SNHU Awarded Badges
               </li>
               <li class="list-group-item">
               </li>
@@ -87,7 +87,7 @@
         </h5>
         <p class="card-text">Interact with my live full stack application!</p>
         <div class="iframe-container">
-       <iframe src="https://rescueanimalacademy.com" allowfullscreen></iframe>
+      <!-- <iframe src="https://rescueanimalacademy.com" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
@@ -95,23 +95,5 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script>
-    // Initialize all popovers
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl, {
-        html: true, // Allow HTML content inside the popover
-        sanitize: false
-      })
-    })
-
-    // Hide popover when clicking outside
-    document.addEventListener('click', function (event) {
-      popoverList.forEach(function (popover) {
-        if (!popover._element.contains(event.target)) { // Check if the click is outside the popover
-          popover.hide();
-        }
-      });
-    });
-  </script>
+  <script src="scripts.js"></script>
 </html>
