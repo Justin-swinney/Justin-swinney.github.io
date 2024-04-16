@@ -1,8 +1,8 @@
 /* Fetch modular parts */
 fetchComponents('navbar.html', 'navbar');
-fetchComponents('../html/components/capstone/software-design-engineering.html', 'software-design-engineering-content-component');
-fetchComponents('../html/components/capstone/algorithms-data-structures.html', 'algorithms-data-structures-content-component');
-fetchComponents('../html/components/capstone/databases.html', 'databases-content-component');
+fetchComponents('../components/capstone/software-design-engineering.html', 'software-design-engineering-content-component');
+fetchComponents('../components/capstone/algorithms-data-structures.html', 'algorithms-data-structures-content-component');
+fetchComponents('../components/capstone/databases.html', 'databases-content-component');
 
 /* FETCH "COMPONENTS" organize Index.html into a "component" based structure */
 function fetchComponents(url, elementId) {
