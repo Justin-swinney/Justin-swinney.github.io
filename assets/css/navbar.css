@@ -1,0 +1,29 @@
+.body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+/* NAV BAR */
+.navbar {
+    background-color: #282828;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.2rem!important;
+}
+.navbar-toggler {
+    border: none;
+}
+/* NAV ICONS */
+.bi {
+    font-size: 2.5rem
+}
+
+.bi-linkedin {
+    color: #0077B5;
+}
+
+.bi-github {
+    color: #ffffff;
+}

@@ -1,0 +1,1 @@
+This project initially lacked attention to detail and several key components of software development. The console interface lacked input validation, error handling, formatting, modularity, and readability. However, as one of my early projects while learning Java, it serves as a perfect example to showcase my technical advancements throughout my computer science journey.

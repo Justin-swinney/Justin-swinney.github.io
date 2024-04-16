@@ -1,0 +1,17 @@
+.body {
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+.lead {
+    font-weight: 400!important;
+    color: black!important;
+}
+
+.intro-container {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
