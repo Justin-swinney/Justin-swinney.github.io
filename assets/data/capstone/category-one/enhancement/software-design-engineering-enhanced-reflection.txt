@@ -1,0 +1,7 @@
+This project has been an incredibly enriching experience, surpassing my initial expectations. Building a full-stack application and hosting it live has provided invaluable hands-on experience applicable to real-world scenarios. From ensuring application security to addressing UI discrepancies during the transition from a locally hosted development site to a production environment, I've gained insights into the meticulous details required for smooth deployments.
+
+Setting up a CI/CD pipeline, although briefly utilized due to S3 pricing constraints, expanded my understanding of deployment automation. I deepened my knowledge of S3 buckets, using them to host the front-end and store images in a separate bucket. I also learned to apply S3 bucket policies and programmatically replace images through my Spring Boot backend.
+
+Throughout the project, I encountered numerous challenges that necessitated significant refactoring. Issues like improper organization and code maintainability were rectified through a major refactor to adhere to Angular 17.3 standards and ensure Bootstrap was correctly initiated to prevent interference between components using Bootstrap.
+
+I also faced challenges with input and user feedback leveraging spring boot annotations within my models, CRUD operations, and transmitting multipart files to the backend. Utilizing documentation and console logs, I was able to identify and rectify these issues, further honing my problem-solving skills and reinforcing the importance of thorough testing and debugging practices.

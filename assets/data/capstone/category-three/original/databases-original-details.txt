@@ -1,0 +1,1 @@
+As mentioned previously, the original artifact relied on in-memory storage and lacked a proper database component, highlighting the pivotal need for enhancement in this project. This enhancement aimed to address this fundamental limitation by integrating MongoDB Atlas to host the database, thereby laying a robust foundation for secure and scalable data storage and retrieval.

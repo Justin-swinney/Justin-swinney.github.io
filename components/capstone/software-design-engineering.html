@@ -4,7 +4,7 @@
 <link href="/assets/css/shared.css" rel="stylesheet">
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
 
-<body id="software-design-engineering-content-component">
+<body>
 <div class="accordion-item">
     <h2 class="accordion-header">
         <button aria-controls="collapseOne" aria-expanded="true" class="accordion-button fs-4 fw-bold" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
@@ -12,13 +12,18 @@
         </button>
     </h2>
     <div class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenExample" id="collapseOne">
-        <div class="accordion-body">
-            <div class="intro-container mb-4 ">
-                <h2 class="h1">Intro to Application Development <span class="separator">|</span> Grazioso Rescue Animals</h2>
-                <p class="lead" id="software-design-engineering-original-intro-content"></p>
+        <div class="accordion-body shadow">
+            <div class="card shadow mb-5">
+                <div class="card-header">
+                    <h2 class="h2 p-1">Intro to Application Development <span class="separator">|</span> Grazioso Rescue Animals</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead p-2" id="software-design-engineering-original-intro-content"></p>
+                </div>
+
             </div>
 
-            <div id="carouselSoftwareOriginal" class="carousel slide w-50 h-50 mx-auto">
+            <div id="carouselSoftwareOriginal" class="carousel slide w-50 h-50 mx-auto shadow-lg">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselSoftwareOriginal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselSoftwareOriginal" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -57,18 +62,20 @@
                 </button>
             </div>
 
-            <div class="card mt-4">
+            <div class="card mt-5 shadow">
+                <div class="card-header">
+                    <h3 class="h3 p-2">Additional Information</h3>
+                </div>
                 <div class="card-body">
-                    <h2 class="h3"></h2>
                     <div class="row">
                         <div class="col">
-                            <p class="lead" id="software-design-engineering-original-details"></p>
+                            <p class="lead p-2" id="software-design-engineering-original-details"></p>
                         </div>
                     </div>
                     <div class="row d-flex text-md-center">
                         <div class="col">
-                            <a target="_blank" href="https://github.com/Justin-swinney">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-github m-2" viewBox="0 0 16 16" data-bs-placement="top" data-bs-toggle="tooltip" title="Source Code!">
+                            <a target="_blank" href="https://github.com/Justin-swinney/Grazioso-Rescue-Animals-Full-Stack-Application/tree/main/Original%20Artifact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-github m-2" viewBox="0 0 16 16" data-bs-placement="top" data-bs-toggle="tooltip" title="Original Artifact Source Code!">
                                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
                             </a>
@@ -89,9 +96,13 @@
     </h2>
     <div class="accordion-collapse collapse show" data-bs-parent="#accordionPanelsStayOpenExample" id="collapseTwo">
         <div class="accordion-body">
-            <div class="intro-container mb-4">
-                <h2 class="h1">The Frontend</h2>
-                <p class="lead" id="software-design-engineering-enhanced-intro-content"></p>
+            <div class="card mb-5 shadow">
+                <div class="card-header">
+                    <h2>Overview</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead" id="software-design-engineering-enhanced-intro-content"></p>
+                </div>
             </div>
 
             <div id="carouselSoftwareEnhancement" class="carousel slide w-50 h-50 mx-auto">
@@ -133,7 +144,7 @@
                 </button>
             </div>
 
-            <div class="card mt-4">
+            <div class="card mt-5 shadow">
                 <div class="card-body">
                     <h3>List of Enhancements</h3>
                     <div class="list-group">
@@ -141,63 +152,81 @@
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">Sign In Page</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Input fields for username and password, validation, sanitization of inputs.</p>
 
                         </a>
                         <a href="#carouselSoftwareEnhancement" data-bs-slide-to="1" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">User Registration Page</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Input fields for required user information, password confirmation with live user feedback of matching passwords, input validation, sanitization. </p>
 
                         </a>
                         <a href="#carouselSoftwareEnhancement" data-bs-slide-to="2" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">Dashboard Page</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Table, sorting, filtering, searching, pagination, training status progress bar UI components.</p>
 
                         </a>
                         <a href="#carouselSoftwareEnhancement" data-bs-slide-to="3" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">Animal Info Page</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Various animal data cards, OpenStreetMap, dynamic animal type icon, reservation modal.</p>
 
                         </a>
                         <a href="#carouselSoftwareEnhancement" data-bs-slide-to="4" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">Edit Animal Info Modal</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Edit modal that utilizes a modular form that dynamically populates fields associated with the specified animal.</p>
 
                         </a>
                         <a href="#carouselSoftwareEnhancement" data-bs-slide-to="5" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-2">New Intake Page</h5>
                             </div>
-                            <p class="mb-2">Some placeholder content in a paragraph.</p>
+                            <p class="mb-2">Reusable form that dynamically populates fields based on animal types contains user feedback, input validation and sanitization.</p>
+                        </a>
+                        <a href="#carouselSoftwareEnhancement" data-bs-slide-to="5" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-2">Navigation Bar</h5>
+                            </div>
+                            <p class="mb-2">Modular navigation bar shared across all views, allows navigation.</p>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h2 class="h3"></h2>
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h3 class="h3"> Justification and Learnings </h3>
+                </div>
+                <div class="card-body shadow">
                     <div class="row">
                         <div class="col">
-                            <p class="lead">
-                                CONTENT HERE
-                            </p>
+                            <p class="lead" id="software-design-engineering-enhanced-justification"></p>
                         </div>
                     </div>
                     <div class="row d-flex text-md-center">
                         <div class="col">
-                            <a target="_blank" href="https://github.com/Justin-swinney">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-github m-2" viewBox="0 0 16 16" data-bs-placement="top" data-bs-toggle="tooltip" title="Source Code!">
+                            <a target="_blank" href="https://github.com/Justin-swinney/Grazioso-Rescue-Animals-Full-Stack-Application/tree/main/Enhanced%20Artifact/RescueAcademyFrontend">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-github m-2" viewBox="0 0 16 16" data-bs-placement="top" data-bs-toggle="tooltip" title="Enhancement Source Code!">
                                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h3 class="h3"> Reflection </h3>
+                </div>
+                <div class="card-body shadow">
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead" id="software-design-engineering-enhanced-reflection"></p>
                         </div>
                     </div>
                 </div>
@@ -210,3 +239,4 @@
 <script src="/scripts/scripts.js"></script>
 <script src="/scripts/custom-bootstrap.js"></script>
 <script src="/scripts/data.js"></script>
+

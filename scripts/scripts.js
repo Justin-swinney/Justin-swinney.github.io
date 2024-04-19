@@ -1,17 +1,39 @@
-/* Fetch modular parts */
-fetchComponents('navbar.html', 'navbar');
-fetchComponents('../components/capstone/software-design-engineering.html', 'software-design-engineering-content-component');
-fetchComponents('../components/capstone/algorithms-data-structures.html', 'algorithms-data-structures-content-component');
-fetchComponents('../components/capstone/databases.html', 'databases-content-component');
 
 /* FETCH "COMPONENTS" organize Index.html into a "component" based structure */
-function fetchComponents(url, elementId) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-        });
+async function fetchComponents(filePath, elementId) {
+    const response = await fetch(filePath);
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.text();
+
+    const element = document.getElementById(elementId);
+    if (!element) {
+        throw new Error(`Element with ID ${elementId} not found.`);
+    }
+    element.innerHTML = data;
+    [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        .forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 }
+
+/* Fetch modular parts */
+document.addEventListener('DOMContentLoaded', function() {
+    const isCapstonePage = window.location.pathname.includes('capstone');
+
+    fetchComponents('navbar.html', 'navbar').catch(error => console.error('Failed to load navbar:', error));
+
+    if (isCapstonePage) {
+        const capstoneComponents = [
+            {path: '../components/capstone/software-design-engineering.html', elementId: 'software-design-engineering-content-component'},
+            {path: '../components/capstone/algorithms-data-structures.html', elementId: 'algorithms-data-structures-content-component'},
+            {path: '../components/capstone/databases.html', elementId: 'databases-content-component'}
+        ];
+        capstoneComponents.forEach(({path, elementId}) => {
+            fetchComponents(path, elementId)
+                .catch(error => console.error(`Failed to load ${elementId}:`, error));
+        });
+    }
+});
 
 /* Capstone Key Categories Display on/off */
 function showCategory(category) {

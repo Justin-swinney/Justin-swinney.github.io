@@ -46,7 +46,7 @@
 }
 
 .accordion-body {
-    font-size: 1.0rem; /
+    font-size: 1.0rem;
 }
 .carousel-item img {
     min-height: 345px!important;
@@ -58,3 +58,9 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
+.intro-software-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}

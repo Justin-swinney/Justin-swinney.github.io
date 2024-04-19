@@ -1,0 +1,7 @@
+Throughout this phase of project enhancement, I have not only connected my Angular frontend service with the Spring Boot backend service but have also achieved successful deployment of the frontend through AWS S3 and CloudFront. This experience has been instrumental in deepening my understanding of Angular's capabilities, particularly in optimizing content delivery through bundle sizing and lazy loading. Such optimizations ensure that content reaches users swiftly and efficiently, enhancing the overall user experience.
+
+Additionally, my engagement with AWS has enriched my knowledge of best practices for hosting services on CloudFront and S3. I've learned to navigate the intricacies of cloud deployment, gaining insights that have significantly streamlined the deployment process.
+
+During this period, I have also focused on enhancing the security of my application. I have implemented robust methods to ensure data type safety and prevent malicious inputs, reinforcing the security framework of my project. This has not only improved the security aspects but also sharpened my programming skills, aligning with fundamental security and programming principles.
+
+My exploration of the Angular framework has further broadened my technical skills. With more time, I would delve deeper into Angular-specific libraries, such as NG Bootstrap. This would facilitate a more seamless integration with Angular, leveraging its features to enhance both functionality and developer experience.

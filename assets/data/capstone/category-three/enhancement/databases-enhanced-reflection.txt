@@ -1,0 +1,15 @@
+The backend service development for my IT-145 project conversion has been an enriching experience, expanding my skills in Spring Boot, MongoDB, AWS, and MongoDB Atlas. While I had some familiarity with these technologies, I quickly realized the depth of my knowledge was limited.
+
+I dedicated significant time to studying the documentation for Spring Boot, MongoDB, AWS, and MongoDB Atlas, which greatly enhanced my understanding and proficiency. For example, in Spring Boot, I focused on improving my testing skills. Though initially challenging, I gained a solid grasp of Mockito and how to mock services for effective testing, ensuring data separation.
+
+In Spring Security, I had to adapt to the changes in versions 6 and up. This involved learning how to integrate JWT into Spring Security, utilizing the Spring framework for authentication and authorization, which significantly improved my security mindset.
+
+My exploration of AWS was equally enlightening. I configured an EC2 instance, connecting to it from my local machine, and deployed my backend as a service within the EC2 instance, ensuring automatic restarts after instance reboots. I also gained valuable experience in VPC configuration, HTTPS implementation, and setting up private and public subnets.
+
+In MongoDB, I utilized JSON subtypes for sorting different animal types within a single collection and experimented with the aggregation pipeline by combining two separate collections, although I later revised this approach. I also implemented MongoDB Atlas to host my MongoDB database, further enhancing my skills in database management and cloud hosting.
+
+Throughout this process, I faced various challenges, such as balancing this project with four other demanding courses, which heightened my stress levels. However, my background in management has equipped me with the skills to effectively manage stress and turn it into a driving force for achieving my goals.
+
+Another challenge was deciding on the best backend service hosting setup. After experimenting with Elastic Beanstalk, I eventually settled on using EC2, which provided me with a deeper understanding of AWS and backend hosting configurations.
+
+Overall, this project has significantly enhanced my skills and readiness for a career in Spring Boot development. With further exploration and study, I am confident that with the correct exposure I can further my proficiency in Spring Boot to meet industry standards!
