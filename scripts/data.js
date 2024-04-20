@@ -17,7 +17,7 @@ async function insertContent(elementId, filePath) {
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
-    const isIndexPage = window.location.pathname.includes('index');
+    const isIndexPage = window.location.pathname.includes('/');
     const isCapstonePage = window.location.pathname.includes('capstone');
 
     if (isIndexPage) {
