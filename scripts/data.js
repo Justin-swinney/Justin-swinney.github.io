@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     const isIndexPage = window.location.pathname.includes('/');
     const isCapstonePage = window.location.pathname.includes('capstone');
 
-    if (isIndexPage) {
-        console.log("TEST")
-    }
-    await insertContent('intro', '/assets/data/index/intro.txt');
-    console.log("Loaded Index intro data successfully");
-    await insertContent('building-a-better-me', '/assets/data/index/building-better-me.txt');
-    console.log("Loaded Index building a better me data successfully");
     try {
+        if (isIndexPage) {
+            await insertContent('intro', '/assets/data/index/intro.txt');
+            console.log("Loaded Index intro data successfully");
+            await insertContent('building-a-better-me', '/assets/data/index/building-better-me.txt');
+            console.log("Loaded Index building a better me data successfully");
+        }
+
         if (isCapstonePage) {
             console.log('Capstone Page Hit')
             /* Capstone page : Category One (Software Design and Engineering Data Import). */
