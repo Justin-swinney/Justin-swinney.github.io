@@ -1,20 +1,3 @@
-
-/* Live Text Animations */
-.live-indicator {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.live-dot {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 5px;
-    animation: blink 1.5s infinite;
-}
-
 @keyframes blink {
     50% {
         opacity: 0;
@@ -23,7 +6,7 @@
 
 .live-text {
     font-weight: bold;
-    color: red;
+    color: rgba(3, 103, 3, 0.66);
 }
 
 
