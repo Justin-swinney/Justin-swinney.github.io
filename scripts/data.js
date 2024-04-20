@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const isCapstonePage = window.location.pathname.includes('capstone');
 
     try {
-        if (isIndexPage) {
+        if (!isCapstonePage) {
             await insertContent('intro', '/assets/data/index/intro.txt');
             console.log("Loaded Index intro data successfully");
             await insertContent('building-a-better-me', '/assets/data/index/building-better-me.txt');
