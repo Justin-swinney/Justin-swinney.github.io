@@ -35,57 +35,57 @@ document.addEventListener('DOMContentLoaded', async function() {
             console.log('Capstone Page Hit')
             /* Capstone page : Category One (Software Design and Engineering Data Import). */
             await insertContent('capstone-intro-content', '/assets/data/capstone/capstone-intro.txt');
-            console.log("Loaded capstone intro data successfully");
+            console.log("1. Loaded capstone intro data successfully");
             // Original intro content
             await insertContent('software-design-engineering-original-intro-content', '/assets/data/capstone/category-one/original/software-design-engineering-original-intro.txt');
-            console.log("Loaded software design engineering original intro data successfully");
+            console.log("1. Loaded software design engineering original intro data successfully");
             // Original details content
             await insertContent('software-design-engineering-original-details', '/assets/data/capstone/category-one/original/software-design-engineering-original-details.txt');
-            console.log("Loaded software design engineering original details data successfully");
+            console.log("2. Loaded software design engineering original details data successfully");
             // Enhancement intro content
             await insertContent('software-design-engineering-enhanced-intro-content', '/assets/data/capstone/category-one/enhancement/software-design-engineering-enhanced-intro.txt');
-            console.log("Loaded software design engineering enhanced intro data successfully");
+            console.log("3. Loaded software design engineering enhanced intro data successfully");
             // Enhancement details content
             await insertContent('software-design-engineering-enhanced-justification', '/assets/data/capstone/category-one/enhancement/software-design-engineering-enhanced-justification.txt');
-            console.log("Loaded software design engineering enhanced justification data successfully");
+            console.log("4. Loaded software design engineering enhanced justification data successfully");
             // Enhancement reflection content
             await insertContent('software-design-engineering-enhanced-reflection', '/assets/data/capstone/category-one/enhancement/software-design-engineering-enhanced-reflection.txt');
-            console.log("Loaded software design engineering enhanced reflection data successfully");
+            console.log("5. Loaded software design engineering enhanced reflection data successfully");
 
             /* Capstone page : Category Two (Algorithms & Data Structures Data Import). */
             // Original intro content
             await insertContent('algorithms-data-structures-original-intro', '/assets/data/capstone/category-two/original/algorithms-data-structures-original-intro.txt');
-            console.log("Loaded Algorithms and Data Structures original intro data successfully");
+            console.log("1. Loaded Algorithms and Data Structures original intro data successfully");
             // Original details content
             await insertContent('algorithms-data-structures-original-details', '/assets/data/capstone/category-two/original/algorithms-data-structures-original-details.txt');
-            console.log("Loaded Algorithms and Data Structures enhanced details data successfully");
+            console.log("2. Loaded Algorithms and Data Structures enhanced details data successfully");
             // Enhancement intro content
             await insertContent('algorithms-data-structures-enhanced-intro', '/assets/data/capstone/category-two/enhancement/algorithms-data-structures-enhanced-intro.txt');
-            console.log("Loaded Algorithms and Data Structures enhanced intro data successfully");
+            console.log("3. Loaded Algorithms and Data Structures enhanced intro data successfully");
 
             await insertContent('algorithms-data-structures-enhanced-justification', '/assets/data/capstone/category-two/enhancement/algorithms-data-structures-enhanced-justification.txt');
-            console.log("Loaded Algorithms and Data Structures enhanced justification data successfully");
+            console.log("4. Loaded Algorithms and Data Structures enhanced justification data successfully");
 
             await insertContent('algorithms-data-structures-enhanced-reflection', '/assets/data/capstone/category-two/enhancement/algorithms-data-structures-enhanced-reflection.txt');
-            console.log("Loaded Algorithms and Data Structures enhanced reflection data successfully");
+            console.log("5. Loaded Algorithms and Data Structures enhanced reflection data successfully");
 
 
             /* Capstone page : Category Three (Databases Data Import). */
             // Original intro content
             await insertContent('databases-original-intro', '/assets/data/capstone/category-three/original/databases-original-intro.txt');
-            console.log("Loaded original database intro content successfully");
+            console.log("1. Loaded original database intro content successfully");
             // Original details content
             await insertContent('databases-original-details', '/assets/data/capstone/category-three/original/databases-original-details.txt');
-            console.log("Loaded original database details content successfully");
+            console.log("2. Loaded original database details content successfully");
             // Enhancement intro content
             await insertContent('databases-enhanced-intro', '/assets/data/capstone/category-three/enhancement/databases-enhanced-intro.txt');
-            console.log("Loaded enhanced database intro successfully");
+            console.log("3. Loaded enhanced database intro successfully");
             // Enhancement justification content
             await insertContent('databases-enhanced-justification', '/assets/data/capstone/category-three/enhancement/databases-enhanced-justification.txt');
-            console.log("Loaded enhanced database justification successfully");
+            console.log("4. Loaded enhanced database justification successfully");
             // Enhancement reflection content
             await insertContent('databases-enhanced-reflection', '/assets/data/capstone/category-three/enhancement/databases-enhanced-reflection.txt');
-            console.log("Loaded enhanced database reflection successfully");
+            console.log("5. Loaded enhanced database reflection successfully");
         }
     } catch (error) {
         console.error("Error: ", error);
