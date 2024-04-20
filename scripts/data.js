@@ -17,7 +17,12 @@ async function insertContent(elementId, filePath) {
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
+    const isIndexPage = window.location.pathname.includes('index');
     const isCapstonePage = window.location.pathname.includes('capstone');
+
+    if (isIndexPage) {
+        console.log("TEST")
+    }
     await insertContent('intro', '/assets/data/index/intro.txt');
     console.log("Loaded Index intro data successfully");
     await insertContent('building-a-better-me', '/assets/data/index/building-better-me.txt');
