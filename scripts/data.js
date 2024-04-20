@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', async function() {
             console.log('Index Page Hit')
             /* Index page. */
             // Intro
-            await insertContent('intro', '/assets/data/index/intro.txt');
-            console.log("Loaded Index intro data successfully");
+            insertContent('intro', '/assets/data/index/intro.txt').then(r => {
+                console.log("Loaded Index intro data successfully");
+            });
 
             // Building a better me
             await insertContent('building-a-better-me', '/assets/data/index/building-better-me.txt');
